@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                docker build --tag=wildfly-postgres .
+                sh 'docker build --tag=wildfly-postgres .'
             }
         }
     }
